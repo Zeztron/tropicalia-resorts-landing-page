@@ -1,9 +1,9 @@
 :root {
+  --primary-color-1: #deaa86;
   --light-grey: #eee;
   --dark-grey: #222;
   --year-color: #555;
-  --icon-color: #777;
-  --icon-color-hovered: #deaa86; }
+  --icon-color: #777; }
 
 html {
   font-size: 62.5%;
@@ -44,12 +44,50 @@ body {
     color: var(--icon-color);
     transition: color .3s; }
     .social-icons-list .social-link:hover {
-      color: var(--icon-color-hovered); }
+      color: var(--primary-color-1); }
 
 .year {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   color: var(--year-color); }
+
+/* ========================================================================== */
+/* NAVIGATION COMPONENTS */
+/* ========================================================================== */
+.navigation__heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: .2rem;
+  color: var(--primary-color-1);
+  text-align: center; }
+
+.navigation__search-input {
+  width: 30rem;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+  color: var(--primary-color-1);
+  letter-spacing: .1rem;
+  outline: none;
+  border: 0.1rem solid var(--year-color);
+  border-radius: 10rem;
+  transition: background-color .3s; }
+  .navigation__search-input:focus {
+    background-color: rgba(0, 0, 0, 0.1); }
+
+.navigation__search-btn {
+  border: none;
+  background-color: transparent;
+  color: var(--primary-color-1);
+  font-size: 1.7rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer; }
+  .navigation__search-btn:focus {
+    outline: none; }
 
 /* ========================================================================== */
 /* SIDEBAR */
@@ -63,3 +101,20 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center; }
+
+/* ========================================================================== */
+/* NAVIGATION */
+/* ========================================================================== */
+.navigation {
+  margin-left: 8rem;
+  position: fixed;
+  width: 40rem;
+  height: 100%;
+  background: linear-gradient(to top, #222029, rgba(34, 32, 41, 0.8)), url("../img/nav-bg.jpeg") center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .navigation__search {
+    position: relative; }

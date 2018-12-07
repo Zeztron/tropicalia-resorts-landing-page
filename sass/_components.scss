@@ -38,7 +38,7 @@
         transition: color .3s;
 
         &:hover {
-            color: var(--icon-color-hovered);
+            color: var(--primary-color-1);
         }
     }
 }
@@ -47,4 +47,52 @@
     margin-bottom: 1rem;
     font-size: 1.5rem;
     color: var(--year-color);
+}
+
+/* ========================================================================== */
+/* NAVIGATION COMPONENTS */
+/* ========================================================================== */
+.navigation {
+
+    &__heading {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 3.5rem;
+        font-weight: 300;
+        letter-spacing: .2rem;
+        color: var(--primary-color-1);
+        text-align: center;
+    }
+
+    &__search-input {
+        width: 30rem;
+        padding: 1rem 2rem;
+        background-color: rgba(0, 0, 0, .3);
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1.6rem;
+        color: var(--primary-color-1);
+        letter-spacing: .1rem;
+        outline: none;
+        border: .1rem solid var(--year-color);
+        border-radius: 10rem;
+        transition: background-color .3s;
+
+        &:focus {
+            background-color: rgba(0, 0, 0, .1);
+        }
+    }
+
+    &__search-btn {
+        border: none;
+        background-color: transparent;
+        color: var(--primary-color-1);
+        font-size: 1.7rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+    }
 }
