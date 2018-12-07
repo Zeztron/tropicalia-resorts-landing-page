@@ -1,0 +1,50 @@
+/* ========================================================================== */
+/* SIDEBAR COMPONENTS */
+/* ========================================================================== */
+.menu-icon {
+
+    margin-top: 3rem;
+    cursor: pointer;
+
+    .line {
+        height: .2rem;
+        width: 2.5rem;
+        background-color: var(--dark-grey);
+        margin-bottom: .6rem;
+    }
+
+    .line-1, .line-3 {
+        width: 1.8rem;
+        transition: width .3s;
+    }
+
+    &:hover .line{
+        width: 2.5rem;
+    }
+}
+
+.social-icons-list {
+    list-style: none;
+    padding: 0;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .social-link {
+        font-size: 2rem;
+        color: var(--icon-color);
+        transition: color .3s;
+
+        &:hover {
+            color: var(--icon-color-hovered);
+        }
+    }
+}
+
+.year {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--year-color);
+}

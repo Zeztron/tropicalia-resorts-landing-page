@@ -1,3 +1,10 @@
+:root {
+  --light-grey: #eee;
+  --dark-grey: #222;
+  --year-color: #555;
+  --icon-color: #777;
+  --icon-color-hovered: #deaa86; }
+
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
@@ -6,3 +13,53 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif; }
+
+/* ========================================================================== */
+/* SIDEBAR COMPONENTS */
+/* ========================================================================== */
+.menu-icon {
+  margin-top: 3rem;
+  cursor: pointer; }
+  .menu-icon .line {
+    height: .2rem;
+    width: 2.5rem;
+    background-color: var(--dark-grey);
+    margin-bottom: .6rem; }
+  .menu-icon .line-1, .menu-icon .line-3 {
+    width: 1.8rem;
+    transition: width .3s; }
+  .menu-icon:hover .line {
+    width: 2.5rem; }
+
+.social-icons-list {
+  list-style: none;
+  padding: 0;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+  .social-icons-list .social-link {
+    font-size: 2rem;
+    color: var(--icon-color);
+    transition: color .3s; }
+    .social-icons-list .social-link:hover {
+      color: var(--icon-color-hovered); }
+
+.year {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--year-color); }
+
+/* ========================================================================== */
+/* SIDEBAR */
+/* ========================================================================== */
+.sidebar {
+  width: 8rem;
+  height: 100%;
+  background-color: var(--light-grey);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }

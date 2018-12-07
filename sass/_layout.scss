@@ -1,0 +1,13 @@
+/* ========================================================================== */
+/* SIDEBAR */
+/* ========================================================================== */
+.sidebar {
+    width: 8rem;
+    height: 100%;
+    background-color: var(--light-grey);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
