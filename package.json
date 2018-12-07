@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compress:css": "node-sass css/main.css css/styles.css --output-style compressed"
   },
-  "author": "",
+  "author": "Harsh",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.10.0"
   }
 }
