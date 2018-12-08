@@ -188,7 +188,8 @@ li {
     border: 2px solid var(--primary-color-1);
     outline: none;
     cursor: pointer;
-    transition: all 0.4s cubic-bezier(1, 0, 0, 1); }
+    transition: all 0.4s cubic-bezier(1, 0, 0, 1);
+    animation: anim 1s 1s backwards; }
     .header .banner__button:hover {
       background: var(--primary-color-1);
       color: white; }

@@ -184,13 +184,13 @@
             font-size: 6rem;
             font-weight: 400;  
             margin-bottom: 0;  
-            animation: anim 2s;    
+            animation: anim 2s;
         }
 
         &__paragraph {
             font-size: 3.5rem;
             font-weight: 300;
-            animation: anim 1.5s .5s backwards; 
+            animation: anim 1.5s .5s backwards;
         }
 
         &__button {
@@ -206,6 +206,8 @@
             outline: none;
             cursor: pointer;
             transition: all .4s cubic-bezier(1, 0, 0, 1);
+            animation: anim 1s 1s backwards;
+
 
             &:hover {
                 background: var(--primary-color-1);
