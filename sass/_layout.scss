@@ -11,6 +11,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 10;
+    box-shadow: 0 1px 1px 1px var(--lighter-grey);
 }
 
 /* ========================================================================== */
@@ -60,4 +61,13 @@
     height: 100vh;
     background: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)),url("../img/header-2.jpg") center no-repeat;
     background-size: cover;
+}
+
+/* ========================================================================== */
+/* ABOUT US */
+/* ========================================================================== */
+.about-us {
+    margin-left: 8rem;
+    display: flex;
+    background-color: var(--lighter-grey);
 }

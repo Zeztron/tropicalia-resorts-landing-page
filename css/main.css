@@ -5,7 +5,8 @@
   --dark-grey: #222;
   --dark-grey-2: #333;
   --year-color: #555;
-  --icon-color: #777; }
+  --icon-color: #777;
+  --underline-color: #bd5d1c; }
 
 @keyframes anim {
   0% {
@@ -197,6 +198,90 @@ li {
       transform: translateY(0.2rem); }
 
 /* ========================================================================== */
+/* ABOUT US */
+/* ========================================================================== */
+.about-us__content {
+  flex: 0 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+  box-sizing: border-box; }
+  .about-us__content--heading {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--year-color); }
+  .about-us__content .underline .small-underline {
+    width: 9rem;
+    height: .1rem;
+    margin: 0 auto 1rem auto;
+    background-color: var(--underline-color); }
+  .about-us__content .underline .big-underline {
+    width: 20rem;
+    height: .1rem;
+    background-color: var(--underline-color); }
+  .about-us__content .sub-heading {
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    color: var(--underline-color);
+    text-align: center; }
+  .about-us__content--paragraph {
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 5rem; }
+  .about-us__content--btn {
+    width: 15rem;
+    padding: .7rem .5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--lighter-grey);
+    background-color: var(--underline-color);
+    outline: none;
+    cursor: pointer; }
+    .about-us__content--btn .btn-arrow {
+      margin-left: .5rem;
+      transition: all .4s; }
+    .about-us__content--btn:hover .btn-arrow {
+      margin-left: 1.5rem; }
+
+.about-us__images {
+  flex: 1 1;
+  position: relative; }
+  .about-us__images .image {
+    width: 32rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.4);
+    border-radius: .4rem;
+    outline-offset: 2rem;
+    transition: all .2s; }
+    .about-us__images .image:hover {
+      outline: 1.5rem solid var(--underline-color);
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  .about-us__images .image-1 {
+    top: 10%;
+    left: 20%; }
+  .about-us__images .image-2 {
+    top: 20%;
+    left: 30%; }
+  .about-us__images .image-3 {
+    top: 30%;
+    left: 40%; }
+  .about-us__images .image-4 {
+    top: 40%;
+    left: 50%; }
+
+/* ========================================================================== */
 /* SIDEBAR */
 /* ========================================================================== */
 .sidebar {
@@ -208,7 +293,8 @@ li {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  z-index: 10; }
+  z-index: 10;
+  box-shadow: 0 1px 1px 1px var(--lighter-grey); }
 
 /* ========================================================================== */
 /* NAVIGATION */
@@ -250,3 +336,11 @@ li {
   height: 100vh;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("../img/header-2.jpg") center no-repeat;
   background-size: cover; }
+
+/* ========================================================================== */
+/* ABOUT US */
+/* ========================================================================== */
+.about-us {
+  margin-left: 8rem;
+  display: flex;
+  background-color: var(--lighter-grey); }
