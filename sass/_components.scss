@@ -155,3 +155,66 @@
         margin-bottom: 1.5rem;
     }
 }
+
+.header {
+
+    .brand {
+        display: flex;
+        cursor: pointer;
+
+        .hotel-heading {
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 2.7rem;
+            font-weight: 400;
+            color: var(--primary-color-1);
+            letter-spacing: .2rem;
+        }
+    }
+
+    .banner {
+        color: var(--lighter-grey);
+        height: 65rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &__heading {
+            font-family: "Josefin Sans", sans-serif;    
+            font-size: 6rem;
+            font-weight: 400;  
+            margin-bottom: 0;  
+            animation: anim 2s;    
+        }
+
+        &__paragraph {
+            font-size: 3.5rem;
+            font-weight: 300;
+            animation: anim 1.5s .5s backwards; 
+        }
+
+        &__button {
+            font-family: "Josefin Sans", sans-serif;    
+            width: 21rem;
+            padding: 1.3rem 2rem;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            color: var(--primary-color-1);
+            letter-spacing: .1rem;
+            background: transparent;
+            border: 2px solid var(--primary-color-1);
+            outline: none;
+            cursor: pointer;
+            transition: all .4s cubic-bezier(1, 0, 0, 1);
+
+            &:hover {
+                background: var(--primary-color-1);
+                color: white;
+            }
+
+            &:active {
+                transform: translateY(.2rem);
+            }
+        }
+    }
+}

@@ -1,9 +1,21 @@
 :root {
     --primary-color-1: #deaa86;
+    --lighter-grey: #ddd;
     --light-grey: #eee;
     --dark-grey: #222;
+    --dark-grey-2: #333;
     --year-color: #555;
     --icon-color: #777;
+}
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 

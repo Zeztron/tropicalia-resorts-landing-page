@@ -1,9 +1,17 @@
 :root {
   --primary-color-1: #deaa86;
+  --lighter-grey: #ddd;
   --light-grey: #eee;
   --dark-grey: #222;
+  --dark-grey-2: #333;
   --year-color: #555;
   --icon-color: #777; }
+
+@keyframes anim {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 html {
   font-size: 62.5%;
@@ -141,6 +149,52 @@ li {
   font-size: 1.2rem;
   margin-bottom: 1.5rem; }
 
+.header .brand {
+  display: flex;
+  cursor: pointer; }
+  .header .brand .hotel-heading {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.7rem;
+    font-weight: 400;
+    color: var(--primary-color-1);
+    letter-spacing: .2rem; }
+
+.header .banner {
+  color: var(--lighter-grey);
+  height: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .header .banner__heading {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 6rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    animation: anim 2s; }
+  .header .banner__paragraph {
+    font-size: 3.5rem;
+    font-weight: 300;
+    animation: anim 1.5s .5s backwards; }
+  .header .banner__button {
+    font-family: "Josefin Sans", sans-serif;
+    width: 21rem;
+    padding: 1.3rem 2rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--primary-color-1);
+    letter-spacing: .1rem;
+    background: transparent;
+    border: 2px solid var(--primary-color-1);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(1, 0, 0, 1); }
+    .header .banner__button:hover {
+      background: var(--primary-color-1);
+      color: white; }
+    .header .banner__button:active {
+      transform: translateY(0.2rem); }
+
 /* ========================================================================== */
 /* SIDEBAR */
 /* ========================================================================== */
@@ -191,4 +245,7 @@ li {
 /* HEADER*/
 /* ========================================================================== */
 .header {
-  margin-left: 8rem; }
+  margin-left: 8rem;
+  height: 100vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("../img/header-2.jpg") center no-repeat;
+  background-size: cover; }
