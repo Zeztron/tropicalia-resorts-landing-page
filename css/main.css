@@ -6,7 +6,8 @@
   --dark-grey-2: #333;
   --year-color: #555;
   --icon-color: #777;
-  --underline-color: #bd5d1c; }
+  --underline-color: #bd5d1c;
+  --card-color: #15141b; }
 
 @keyframes anim {
   0% {
@@ -261,12 +262,12 @@ li {
     left: 50%;
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.4);
     border-radius: .4rem;
-    outline-offset: 2rem;
+    outline-offset: 1.5rem;
     transition: all .2s; }
     .about-us__images .image:hover {
-      outline: 1.5rem solid var(--underline-color);
+      outline: 1.5rem double var(--underline-color);
       transform: scale(1.05) translateY(-0.5rem);
-      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      box-shadow: 0 4.5rem 7rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
   .about-us__images .image-1 {
     top: 10%;
@@ -280,6 +281,85 @@ li {
   .about-us__images .image-4 {
     top: 40%;
     left: 50%; }
+
+/* ========================================================================== */
+/* ROOMS */
+/* ========================================================================== */
+.rooms .common-header .underline .small-underline {
+  width: 9rem;
+  height: .1rem;
+  margin: 0 auto 1rem auto;
+  background-color: var(--underline-color); }
+
+.rooms .common-header .underline .big-underline {
+  width: 20rem;
+  height: .1rem;
+  margin: 0 auto;
+  background-color: var(--underline-color); }
+
+.rooms__card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .rooms__card-wrapper .room-card {
+    width: 60rem;
+    margin: 5rem;
+    background-color: var(--card-color);
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3); }
+    .rooms__card-wrapper .room-card--img {
+      width: 100%; }
+    .rooms__card-wrapper .room-card--content {
+      color: var(--lighter-grey);
+      padding: 2rem; }
+      .rooms__card-wrapper .room-card--content span {
+        font-size: 1.5rem; }
+    .rooms__card-wrapper .room-card--heading {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: 300; }
+    .rooms__card-wrapper .room-card--paragraph {
+      font-size: 1.5rem;
+      color: var(--icon-color); }
+    .rooms__card-wrapper .room-card--price {
+      font-size: 5rem;
+      font-weight: 300;
+      text-align: right;
+      margin: 0; }
+    .rooms__card-wrapper .room-card--btn {
+      width: 15rem;
+      padding: 1.5rem 1rem;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      color: var(--underline-color);
+      background-color: transparent;
+      border: 1px solid var(--underline-color);
+      border-radius: 10rem;
+      outline: none;
+      cursor: pointer; }
+      .rooms__card-wrapper .room-card--btn .btn-arrow {
+        margin-left: .5rem;
+        transition: all .4s; }
+      .rooms__card-wrapper .room-card--btn:hover .btn-arrow {
+        margin-left: 1.5rem; }
+
+.rooms__btn-wrapper {
+  text-align: center; }
+  .rooms__btn-wrapper .rooms-btn {
+    width: 20rem;
+    padding: 1.5rem 1rem;
+    margin: 4rem 0;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: var(--underline-color);
+    border: 0.2rem solid var(--underline-color);
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.2);
+    transition: all .2s; }
+    .rooms__btn-wrapper .rooms-btn:hover {
+      color: var(--lighter-grey);
+      background-color: var(--underline-color); }
 
 /* ========================================================================== */
 /* SIDEBAR */
@@ -329,6 +409,19 @@ li {
   width: 2.5rem; }
 
 /* ========================================================================== */
+/* COMMON HEADER */
+/* ========================================================================== */
+.common-header {
+  padding: 5rem;
+  text-align: center;
+  color: var(--underline-color); }
+
+.common-heading {
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: .2rem; }
+
+/* ========================================================================== */
 /* HEADER*/
 /* ========================================================================== */
 .header {
@@ -344,3 +437,9 @@ li {
   margin-left: 8rem;
   display: flex;
   background-color: var(--lighter-grey); }
+
+/* ========================================================================== */
+/* ROOMS */
+/* ========================================================================== */
+.rooms {
+  margin-left: 8rem; }
