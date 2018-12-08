@@ -7,7 +7,8 @@
   --year-color: #555;
   --icon-color: #777;
   --underline-color: #bd5d1c;
-  --card-color: #15141b; }
+  --card-color: #15141b;
+  --footer-background: #1c1c1c; }
 
 @keyframes anim {
   0% {
@@ -362,6 +363,128 @@ li {
       background-color: var(--underline-color); }
 
 /* ========================================================================== */
+/* CUSTOMERS */
+/* ========================================================================== */
+.customers .common-header .underline .small-underline {
+  width: 9rem;
+  height: .1rem;
+  margin: 0 auto 1rem auto;
+  background-color: var(--underline-color); }
+
+.customers .common-header .underline .big-underline {
+  width: 20rem;
+  height: .1rem;
+  margin: 0 auto;
+  background-color: var(--underline-color); }
+
+.customers__paragraph {
+  font-size: 1.8rem;
+  color: var(--lighter-grey);
+  width: 50%;
+  margin: 2rem auto 8rem auto;
+  text-align: center; }
+
+.customers__card-wrapper {
+  display: flex;
+  justify-content: space-evenly; }
+  .customers__card-wrapper .customer-card {
+    background-color: var(--light-grey);
+    width: 60rem;
+    display: flex; }
+    .customers__card-wrapper .customer-card__image-wrapper {
+      margin: auto 0; }
+      .customers__card-wrapper .customer-card__image-wrapper .customer-card-image {
+        width: 20rem;
+        margin-left: -1.3rem; }
+    .customers__card-wrapper .customer-card__info {
+      padding: 0 2rem; }
+      .customers__card-wrapper .customer-card__info--full-name {
+        font-size: 2rem;
+        font-weight: 300;
+        margin-bottom: 0; }
+      .customers__card-wrapper .customer-card__info--paragraph-1 {
+        font-size: 1.2rem;
+        font-style: italic;
+        color: var(--underline-color); }
+      .customers__card-wrapper .customer-card__info--paragraph-2 {
+        font-size: 1.3rem;
+        font-style: italic; }
+
+/* ========================================================================== */
+/* FOOTER */
+/* ========================================================================== */
+.footer-heading {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: goldenrod;
+  margin: 1rem 0 3rem 0; }
+
+.footer-list {
+  padding: 0; }
+  .footer-list__item {
+    margin-bottom: 2rem; }
+    .footer-list__item--link {
+      font-size: 1.4rem;
+      color: #bbb; }
+
+.contact p {
+  font-size: 1.5rem;
+  color: #bbb;
+  margin-bottom: 4rem; }
+
+.contact .footer-form {
+  display: flex; }
+  .contact .footer-form--input {
+    width: 25rem;
+    padding: 1rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.8rem;
+    color: #bbb;
+    outline: none; }
+  .contact .footer-form--btn {
+    padding: 1rem;
+    background-color: var(--underline-color);
+    color: var(--lighter-grey);
+    border: none; }
+
+.gallery {
+  max-width: 45rem; }
+  .gallery .gallery-images {
+    display: flex;
+    flex-wrap: wrap; }
+    .gallery .gallery-images__image-wrapper {
+      width: 12rem;
+      margin: .4rem;
+      overflow: hidden; }
+      .gallery .gallery-images__image-wrapper .footer-image {
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transition: all .5s; }
+        .gallery .gallery-images__image-wrapper .footer-image:hover {
+          transform: scale(1.3);
+          opacity: .8; }
+
+.creator-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 0 4rem; }
+  .creator-part .copyright-text {
+    font-size: 1.3rem;
+    color: #aaa; }
+  .creator-part .text-right {
+    font-size: 1.4rem;
+    color: #bbb; }
+    .creator-part .text-right i {
+      font-size: 2rem;
+      margin: .5rem;
+      color: tomato; }
+    .creator-part .text-right span {
+      color: gold; }
+
+/* ========================================================================== */
 /* SIDEBAR */
 /* ========================================================================== */
 .sidebar {
@@ -422,10 +545,15 @@ li {
   letter-spacing: .2rem; }
 
 /* ========================================================================== */
+/* MARGIN LEFT */
+/* ========================================================================== */
+.header, .about-us, .rooms, .customers, .footer {
+  margin-left: 8rem; }
+
+/* ========================================================================== */
 /* HEADER*/
 /* ========================================================================== */
 .header {
-  margin-left: 8rem;
   height: 100vh;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("../img/header-2.jpg") center no-repeat;
   background-size: cover; }
@@ -434,12 +562,21 @@ li {
 /* ABOUT US */
 /* ========================================================================== */
 .about-us {
-  margin-left: 8rem;
   display: flex;
   background-color: var(--lighter-grey); }
 
 /* ========================================================================== */
-/* ROOMS */
+/* CUSTOMERS */
 /* ========================================================================== */
-.rooms {
-  margin-left: 8rem; }
+.customers {
+  padding-bottom: 7rem;
+  background-color: var(--card-color); }
+
+/* ========================================================================== */
+/* FOOTER */
+/* ========================================================================== */
+.main-part {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--footer-background);
+  padding: 4rem; }

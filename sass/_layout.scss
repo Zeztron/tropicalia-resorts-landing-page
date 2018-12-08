@@ -71,10 +71,16 @@
 }
 
 /* ========================================================================== */
+/* MARGIN LEFT */
+/* ========================================================================== */
+.header, .about-us, .rooms, .customers, .footer {
+    margin-left: 8rem;
+}
+
+/* ========================================================================== */
 /* HEADER*/
 /* ========================================================================== */
 .header {
-    margin-left: 8rem;
     height: 100vh;
     background: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)),url("../img/header-2.jpg") center no-repeat;
     background-size: cover;
@@ -84,14 +90,24 @@
 /* ABOUT US */
 /* ========================================================================== */
 .about-us {
-    margin-left: 8rem;
     display: flex;
     background-color: var(--lighter-grey);
 }
 
 /* ========================================================================== */
-/* ROOMS */
+/* CUSTOMERS */
 /* ========================================================================== */
-.rooms {
-    margin-left: 8rem;
+.customers {
+    padding-bottom: 7rem;
+    background-color: var(--card-color);
+}
+
+/* ========================================================================== */
+/* FOOTER */
+/* ========================================================================== */
+.main-part {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--footer-background);
+    padding: 4rem;
 }
