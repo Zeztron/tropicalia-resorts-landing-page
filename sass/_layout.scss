@@ -25,6 +25,7 @@
     background: linear-gradient(to top, rgba(34, 32, 41, 1), rgba(34, 32, 41, .8)) ,url("../img/nav-bg.jpeg") center no-repeat;
     background-size: cover;
     display: flex;
+    z-index: 5;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;

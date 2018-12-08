@@ -510,6 +510,7 @@ li {
   background: linear-gradient(to top, #222029, rgba(34, 32, 41, 0.8)), url("../img/nav-bg.jpeg") center no-repeat;
   background-size: cover;
   display: flex;
+  z-index: 5;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -593,3 +594,94 @@ li {
     display: flex; }
     .footer-list__item {
       margin-right: 3rem; } }
+
+@media (max-width: 1200px) {
+  .about-us {
+    flex-direction: column;
+    padding-bottom: 20rem; }
+    .about-us__content {
+      margin-bottom: 0rem; }
+    .about-us__images .image {
+      width: 25rem;
+      border: 2px solid var(--underline-color); } }
+
+@media (max-width: 900px) {
+  .header .banner {
+    text-align: center; }
+    .header .banner__heading {
+      font-size: 4.5rem; }
+    .header .banner__paragraph {
+      font-size: 2.6rem; }
+    .header .banner__button {
+      width: 16rem;
+      font-size: 1rem; }
+  .about-us__images {
+    margin-right: 20rem; } }
+
+@media (max-width: 750px) {
+  .customers__card-wrapper .customer-card {
+    flex-direction: column;
+    width: 20rem; }
+    .customers__card-wrapper .customer-card__image-wrapper .customer-card-image {
+      margin-left: 0; }
+  .footer-list {
+    display: block; }
+  .creator-part {
+    flex-direction: column;
+    text-align: center; }
+    .creator-part .copyright-text {
+      order: 1; } }
+
+@media (max-width: 500px) {
+  .navigation {
+    width: 28rem; }
+    .navigation__search {
+      width: 20rem;
+      margin: 0 auto; }
+    .navigation__search-input {
+      width: 20rem; }
+  .header .brand .hotel-heading {
+    font-size: 2rem;
+    margin: auto 0; }
+  .header .banner {
+    height: 100%;
+    margin-top: -10rem; }
+    .header .banner__heading {
+      font-size: 3rem; }
+    .header .banner__paragraph {
+      font-size: 2rem; }
+  .about-us {
+    padding-bottom: 15rem; }
+    .about-us__content {
+      padding: 5rem; }
+      .about-us__content--heading {
+        font-size: 2.5rem;
+        text-align: center; }
+      .about-us__content .sub-heading {
+        font-size: 2rem;
+        text-align: center; }
+    .about-us__images {
+      margin: 2rem 3rem; }
+      .about-us__images .image {
+        width: 13rem; }
+  .common-heading {
+    font-size: 2rem; }
+  .rooms__card-wrapper .room-card--heading {
+    font-size: 1.5rem; }
+  .rooms__card-wrapper .room-card--price {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left; }
+  .rooms__card-wrapper .room-card--btn {
+    width: 12rem;
+    padding: 1rem .5rem;
+    font-size: 1rem; }
+  .customers__paragraph {
+    font-size: 1.4rem;
+    width: 80%; }
+  .footer .main-part {
+    padding: 2rem; }
+    .footer .main-part .contact .footer-form--input {
+      width: 12rem; }
+    .footer .main-part .gallery .gallery-images__image-wrapper {
+      width: 9rem; } }
