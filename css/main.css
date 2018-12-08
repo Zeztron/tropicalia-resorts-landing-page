@@ -580,3 +580,16 @@ li {
   justify-content: space-between;
   background-color: var(--footer-background);
   padding: 4rem; }
+
+@media (max-width: 1400px) {
+  .customers__card-wrapper {
+    flex-direction: column;
+    align-items: center; }
+    .customers__card-wrapper .customer-card:first-child {
+      margin-bottom: 3rem; }
+  .main-part {
+    flex-direction: column; }
+  .footer-list {
+    display: flex; }
+    .footer-list__item {
+      margin-right: 3rem; } }
